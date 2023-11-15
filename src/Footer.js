@@ -8,7 +8,7 @@ export default function Footer() {
         This project is{" "}
         <a
           className="githubLink"
-          href="https://github.com/Burgundypanda/"
+          href="https://github.com/Burgundypanda/weather-app-react"
           target="_blank"
           rel="noreferrer"
         >
