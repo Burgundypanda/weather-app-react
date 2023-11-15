@@ -6,11 +6,21 @@ export default function Footer() {
     <div className="Footer">
       <p>
         This project is{" "}
-        <a className="githubLink" href="" target="_blank" rel="noreferrer">
+        <a
+          className="githubLink"
+          href="https://github.com/Burgundypanda/"
+          target="_blank"
+          rel="noreferrer"
+        >
           open-sourced{" "}
         </a>
         and was coded by{" "}
-        <a className="linkedinProfile" href="" target="_blank" rel="noreferrer">
+        <a
+          className="linkedinProfile"
+          href="https://www.linkedin.com/in/jakiyarahman/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Jakiya Rahman
         </a>
       </p>
