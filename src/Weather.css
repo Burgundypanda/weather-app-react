@@ -1,0 +1,201 @@
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-color: #f6f5f0;
+  --secondary-color: #c327bc;
+  --third-color: #ff92fdeb;
+  --fourth-color: #f552bc;
+}
+body {
+  background-image: var(--primary-color);
+  font-family: Arial, sans-serif;
+  color: var(--secondary-color);
+}
+
+.wrapper {
+  padding: 20px 0;
+}
+.container {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-height: 490px;
+  max-width: 650px;
+  margin: 60px auto 0;
+  padding: 16px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+.form-container form {
+  padding: 20px 20px -10px 20px;
+}
+.searchBar {
+  width: 426px;
+  padding: 12px;
+  margin-left: 20px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+.search-btn {
+  display: flex;
+  position: relative;
+  left: 460px;
+  top: -48px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  color: #f5feff;
+  background: var(--secondary-color);
+  border: 1px solid var(--fourth-color);
+}
+.location-btn {
+  display: flex;
+  position: relative;
+  top: -1px;
+  left: 80px;
+  padding: 16px;
+  border: 1px solid var(--fourth-color);
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.search-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+.location-btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.tempInfo-container {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.tempInfo-container h1 {
+  display: flex;
+  position: relative;
+  top: -30px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--fourth-color);
+}
+.tempInfo-container li {
+  display: flex;
+  position: relative;
+  top: -30px;
+  font-size: 13px;
+}
+
+.tempInfo-container .tempNumber {
+  display: flex;
+  position: relative;
+  top: -45px;
+  font-size: 65px;
+}
+.tempInfo-container .units {
+  display: flex;
+  position: relative;
+  left: 55px;
+  top: -140px;
+  vertical-align: top;
+}
+.tempInfo-container .active {
+  color: var(--secondary-color);
+  cursor: default;
+  font-size: large;
+  text-decoration: none;
+}
+
+.Weather .active:hover {
+  text-decoration: none;
+}
+.Weather a {
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+
+.forecast-container {
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin: 20px;
+  margin-top: -40px;
+  border-radius: 5px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}
+.forecastIcons {
+  font-size: 25px;
+  color: var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 100%;
+    max-height: 100%;
+  }
+  .outerIcon1 {
+    left: -20px;
+  }
+  .outerIcon2 {
+    left: 35px;
+  }
+  .searchBar {
+    width: 420px;
+  }
+  .tempInfo-container {
+    margin-top: 60px;
+  }
+  .tempInfo-container h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .searchBar {
+    width: 200px;
+    padding: 10px;
+  }
+  .search-btn {
+    padding: 7px;
+    font-size: 14px;
+    top: -40px;
+    left: 230px;
+  }
+  .location-btn {
+    padding: 11px;
+    font-size: 14px;
+    top: -78px;
+    left: 300px;
+  }
+  .tempInfo-container {
+    margin-top: -75px;
+  }
+  .tempInfo-container h1 {
+    font-size: 20px;
+  }
+  .tempInfo-container .units {
+    display: flex;
+    position: relative;
+    top: -80px;
+    left: 260px;
+  }
+  .forecast-container {
+    margin-top: -60px;
+  }
+}
